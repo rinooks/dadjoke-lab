@@ -28,7 +28,7 @@ const toLog = (r) => ({
 });
 
 export default async function handler(req, res) {
-  const [resource] = [].concat(req.query.path || []);
+  const resource = req.url.split('?')[0].split('/').filter(Boolean).pop();
   try {
     if (resource === 'jokes') {
       if (req.method === 'GET') {
