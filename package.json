@@ -1,0 +1,13 @@
+{
+  "name": "dadjoke-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.mjs",
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15"
+  }
+}
